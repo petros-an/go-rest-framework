@@ -3,7 +3,7 @@ package resources
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/manager"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/manager"
 	"strconv"
 )
 

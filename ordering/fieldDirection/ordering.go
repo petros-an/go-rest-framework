@@ -1,6 +1,6 @@
 package fieldDirection
 
-import "go-rest-framework/queryset"
+import "github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 
 type FieldDirectionOrdering struct {
 	FieldName string

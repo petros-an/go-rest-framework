@@ -3,9 +3,9 @@ package delete
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"go-rest-framework/manager"
-	"go-rest-framework/resources"
-	"go-rest-framework/types"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/manager"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/resources"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/types"
 	"reflect"
 )
 

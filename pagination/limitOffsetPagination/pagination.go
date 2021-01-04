@@ -1,8 +1,8 @@
 package limitOffsetPagination
 
 import (
-	"go-rest-framework/pagination"
-	"go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/pagination"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 )
 
 type LimitOffsetPagination struct {

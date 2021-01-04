@@ -5,10 +5,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"net/http"
-	"go-rest-framework/deserializers"
-	"go-rest-framework/manager"
-	"go-rest-framework/resources"
-	"go-rest-framework/types"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/deserializers"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/manager"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/resources"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/types"
 	"reflect"
 )
 

@@ -2,7 +2,7 @@ package fieldFilter
 
 import (
 	"fmt"
-	"go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 )
 
 type FieldFilter struct {

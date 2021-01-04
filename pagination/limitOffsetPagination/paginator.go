@@ -2,7 +2,7 @@ package limitOffsetPagination
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/pagination"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/pagination"
 	"strconv"
 )
 

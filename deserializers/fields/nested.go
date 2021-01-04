@@ -2,7 +2,7 @@ package fields
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/deserializers"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/deserializers"
 )
 
 type NestedField struct {

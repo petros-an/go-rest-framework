@@ -2,7 +2,7 @@ package objectSerializer
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/serializers"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/serializers"
 	"reflect"
 )
 

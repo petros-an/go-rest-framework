@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/ordering"
-	"go-rest-framework/utils"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/ordering"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/utils"
 )
 
 type FieldDirectionOrderer struct {

@@ -3,11 +3,11 @@ package detail
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"go-rest-framework/manager"
-	"go-rest-framework/resources"
-	"go-rest-framework/serializers"
-	"go-rest-framework/types"
-	"go-rest-framework/utils"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/manager"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/resources"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/serializers"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/types"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/utils"
 )
 
 type ResourceDetail struct {

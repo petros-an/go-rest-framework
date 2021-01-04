@@ -3,7 +3,7 @@ package gormqs
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
-	"go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 	"reflect"
 )
 

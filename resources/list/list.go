@@ -2,17 +2,16 @@ package list
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/filtering"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/manager"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/ordering"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/pagination"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/resources"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/serializers"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/types"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/utils"
 	"net/http"
-	"phoenixserver/src/rest"
-	"go-rest-framework/filtering"
-	"go-rest-framework/manager"
-	"go-rest-framework/ordering"
-	"go-rest-framework/pagination"
-	"go-rest-framework/queryset"
-	"go-rest-framework/resources"
-	"go-rest-framework/serializers"
-	"go-rest-framework/types"
-	"go-rest-framework/utils"
 )
 
 type ResourceList struct {
@@ -56,19 +55,19 @@ func (r *ResourceList) GetEndpoint() gin.HandlerFunc {
 
 func AddOrderer(r *ResourceList) {
 	if r.Orderer == nil {
-		r.Orderer = rest.DefaultOrderer
+		r.Orderer = ordering.DefaultOrderer
 	}
 }
 
 func AddPaginator(r *ResourceList) {
 	if r.Paginator == nil {
-		r.Paginator = rest.DefaultPaginator
+		r.Paginator = pagination.DefaultPaginator
 	}
 }
 
 func AddfilterCreator(r *ResourceList) {
 	if r.FilterCreator == nil {
-		r.FilterCreator = rest.DefaultFilterCreator
+		r.FilterCreator = filtering.DefaultFilterCreator
 	}
 }
 
@@ -96,3 +95,5 @@ func SerializeObjects(serializer serializers.Serializer, objects []interface{}, 
 	}
 	return data
 }
+
+

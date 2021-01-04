@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/filtering"
-	"go-rest-framework/filtering/fieldFilter"
-	"go-rest-framework/filtering/operators"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/filtering"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/filtering/fieldFilter"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/filtering/operators"
 	"strconv"
 )
 

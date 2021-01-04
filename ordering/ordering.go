@@ -2,7 +2,8 @@ package ordering
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/ordering/fieldDirection"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 )
 
 const (
@@ -16,4 +17,14 @@ type Ordering interface {
 
 type Orderer interface {
 	GetOrdering(c *gin.Context) (Ordering, error)
+}
+
+var DefaultOrderer = &fieldDirection.FieldDirectionOrderer{
+	DefaultFieldName:  "id",
+	DefaultDirection:  Asc,
+	AllowedFieldNames: []string{"id", "createdAt"},
+	DBMappings: map[string]string{
+		"id": "id",
+		"createdAt": "created_at",
+	},
 }

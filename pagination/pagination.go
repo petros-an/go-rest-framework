@@ -2,7 +2,8 @@ package pagination
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/pagination/limitOffsetPagination"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 )
 
 type Paginator interface {
@@ -14,3 +15,5 @@ type Pagination interface {
 	PaginateQuerySet(set queryset.QuerySet) error
 	GetElasticParams() (int, int)
 }
+
+var DefaultPaginator = limitOffsetPagination.NewPaginator(20, 0)

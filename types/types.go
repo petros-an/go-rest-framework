@@ -2,7 +2,7 @@ package types
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 )
 
 type ResourceOperation interface {

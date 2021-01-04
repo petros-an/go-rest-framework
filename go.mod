@@ -1,4 +1,4 @@
-module go-rest-framework
+module github.com/petros-an/go-rest-framework
 
 go 1.15
 

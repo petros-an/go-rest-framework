@@ -2,7 +2,8 @@ package filtering
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-rest-framework/queryset"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/filtering/queryParamFilterCreator"
+	"github.com/petros-an/github.com/petros-an/go-rest-framework/queryset"
 )
 
 type FilterCreator interface {
@@ -12,3 +13,6 @@ type FilterCreator interface {
 type Filter interface {
 	FilterQuerySet(qs queryset.QuerySet)
 }
+
+var DefaultFilterCreator = queryParamFilterCreator.New([]queryParamFilterCreator.QPFilterOption{})
+
